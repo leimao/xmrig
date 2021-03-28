@@ -36,3 +36,19 @@ The preferred way to configure the miner is the [JSON config file](https://xmrig
 * support@xmrig.com
 * [reddit](https://www.reddit.com/user/XMRig/)
 * [twitter](https://twitter.com/xmrig_dev)
+
+## [Build](https://xmrig.com/docs/miner/build/ubuntu)
+
+```
+sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
+git clone https://github.com/xmrig/xmrig.git
+mkdir xmrig/build && cd xmrig/build
+cmake ..
+make -j$(nproc)
+```
+
+## [Huge Pages](https://xmrig.com/docs/miner/hugepages)
+
+```
+sudo sysctl -w vm.nr_hugepages=1280
+```

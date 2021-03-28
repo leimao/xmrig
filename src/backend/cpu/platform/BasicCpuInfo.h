@@ -48,8 +48,8 @@ protected:
     inline bool hasAVX2() const override                        { return has(FLAG_AVX2); }
     inline bool hasBMI2() const override                        { return has(FLAG_BMI2); }
     inline bool hasCatL3() const override                       { return has(FLAG_CAT_L3); }
-    // inline bool hasOneGbPages() const override                  { return has(FLAG_PDPE1GB); }
-    inline bool hasOneGbPages() const override                  { return true; }
+    inline bool hasOneGbPages() const override                  { return has(FLAG_PDPE1GB); }
+    // inline bool hasOneGbPages() const override                  { return true; }
     inline bool hasXOP() const override                         { return has(FLAG_XOP); }
     inline bool isVM() const override                           { return has(FLAG_VM); }
     inline bool jccErratum() const override                     { return m_jccErratum; }
