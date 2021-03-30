@@ -52,3 +52,10 @@ make -j$(nproc)
 ```
 sudo sysctl -w vm.nr_hugepages=1280
 ```
+
+## Nohup
+
+```
+sudo sysctl -w vm.nr_hugepages=1280
+sudo nohup ./xmrig >/dev/null 2>&1 &
+```
